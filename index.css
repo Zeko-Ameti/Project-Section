@@ -1,13 +1,9 @@
 /* Card */
 #Project-Section .card {
-  background-color: #a3c5a244 !important;
+  background-color: #a3c5a23e !important;
   border-radius: 6px;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-#Project-Section .card:hover .card-title {
-  color: rgb(250, 167, 54);
 }
 
 /* Image */
