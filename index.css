@@ -1,38 +1,38 @@
 /* Card */
-#design-cards .card {
+#Project-Section .card {
   background-color: #a3c5a244 !important;
   border-radius: 6px;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-#design-cards .card:hover .card-title {
+#Project-Section .card:hover .card-title {
   color: rgb(250, 167, 54);
 }
 
 /* Image */
-#design-cards .card .ratio {
+#Project-Section .card .ratio {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   overflow: hidden;
 }
 
 /* Button */
-#design-cards .card .btn {
+#Project-Section .card .btn {
   background-color: rgb(250, 167, 54);
   color: #fff;
   border: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#design-cards .card .btn {
+#Project-Section .card .btn {
   padding: 6px 12px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
 
-#design-cards .card .btn:hover,
-#design-cards .card .btn:focus {
+#Project-Section .card .btn:hover,
+#Project-Section .card .btn:focus {
   background-color: rgb(225, 154, 23) !important;
   color: #fff;
 }
