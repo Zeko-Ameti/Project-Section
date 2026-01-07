@@ -5,10 +5,6 @@
   overflow: hidden;
 }
 
-#design-cards .card:hover .card-title {
-  color: rgb(250, 167, 54);
-}
-
 /* Image */
 #design-cards .card .ratio {
   border-top-left-radius: 5px;
