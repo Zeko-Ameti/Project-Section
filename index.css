@@ -5,10 +5,6 @@
   overflow: hidden;
 }
 
-#Project-Section .card:hover .card-title {
-  color: rgb(250, 167, 54);
-}
-
 /* Image */
 #Project-Section .card .ratio {
   border-top-left-radius: 5px;
