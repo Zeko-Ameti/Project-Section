@@ -151,11 +151,6 @@ select:focus {
     /* Set it manually or use your desired color */
 }
 
-/* on hover over the quick links make them lighter */
-.footer-quick-links:hover {
-    color: var(--font-color) !important;
-}
-
 /* Full height */
 @media (min-width: 992px) {
     .container-2 {
@@ -223,8 +218,17 @@ select:focus {
     margin-top: 0.7rem;
 }
 
+#Project-Section .row:last-child {
+    margin-bottom: 0;
+}
+
 @media (max-width: 991px) {
     #Project-Section .row {
         margin-bottom: 1.5rem;
     }
+}
+
+/* on hover over the quick links make them lighter */
+.footer-quick-links:hover {
+    color: var(--font-color) !important;
 }
