@@ -10,287 +10,360 @@
 </head>
 
 <body>
+
+  <!-- navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-body-bkg fixed-top ">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <img src="./images/Capstone-Evolve-Logo-Name-at-right.png" alt="Capstone Evolve Logo" height="50">
+      </a>
+      <div id="navbarSearchOverlay"
+        class="position-absolute top-0 start-0 w-100 h-100 d-none d-lg-none bg-body-bkg z-3">
+        <div class="container h-100 d-flex align-items-center">
+          <form class="w-100 d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" autofocus>
+            <button class="btn btn-primary me-2" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+            <button type="button" class="btn btn-secondary" id="closeNavbarSearch">
+              <i class="fas fa-times"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center d-lg-none gap-4">
+        <button class="mobile-search-toggle bg-transparent border-0 p-0" type="button" id="mobileSearchToggle"
+          aria-label="Toggle search">
+          <i class="fas fa-magnifying-glass fs-5 text-warning"></i>
+        </button>
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+          aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fs-5">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="others.html">Places</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <div class="d-none d-lg-flex align-items-center">
+          <div class="position-relative me-2">
+            <span class="search-label" id="desktopSearchLabel">Search</span>
+            <i class="fas fa-search mobile-search-toggle" id="desktopSearchIcon" style="cursor: pointer;"></i>
+          </div>
+          <form class="d-flex desktop-search" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary btn-logo-yellow" type="submit">Search</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+  </nav>
+
   <section id="Project-Section" class="py-5">
     <div class="container">
-      <!-- Row-1 -->
-      <div class="row g-4 mb-4">
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
-            <div class="ratio ratio-16x9">
-              <img src="project1.png" class="card-img-top" alt="Web Image">
+      <div class="container-2">
+        <!-- Row-1 -->
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
+              <div class="ratio ratio-16x9">
+                <img src="project1.png" class="card-img-top" alt="Web Image">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Featured Website</h5>
+                <p class="card-text text-muted small flex-grow-1">
+                  Experience contemporary design with clean lines and sophisticated elements...
+                </p>
+                <a href="https://zeko-ameti.github.io/Zeko-Website/" target="_blank"
+                  class="btn text-white align-self-start mt-2">Visit Project
+                </a>
+              </div>
             </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Featured Website</h5>
-              <p class="card-text text-muted small flex-grow-1">
-                Experience contemporary design with clean lines and sophisticated elements...
-              </p>
-              <a href="https://zeko-ameti.github.io/Zeko-Website/" target="_blank"
-                class="btn text-white align-self-start mt-2">Visit Project
-              </a>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
+              <div class="ratio ratio-16x9">
+                <img src="Project2.jpeg" class="card-img-top"
+                  alt="Web Image">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Contemporary</h5>
+                <p class="card-text text-muted small flex-grow-1">
+                  Experience contemporary design with clean lines and sophisticated elements...
+                </p>
+                <a href="https://amar-kadri.github.io/bootstrap-final-project/" target="_blank" class="btn text-white align-self-start mt-2">View Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
+              <div class="ratio ratio-16x9">
+                <img src="Project3.png" class="card-img-top"
+                  alt="Web Image">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Contemporary</h5>
+                <p class="card-text text-muted small flex-grow-1">
+                  Experience contemporary design with clean lines and sophisticated elements...
+                </p>
+                <a href="https://betimh.github.io/sportify/" target="_blank" class="btn text-white align-self-start mt-2">View Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
+              <div class="ratio ratio-16x9">
+                <img src="Project4.png" class="card-img-top"
+                  alt="Web Image">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Contemporary</h5>
+                <p class="card-text text-muted small flex-grow-1">
+                  Experience contemporary design with clean lines and sophisticated elements...
+                </p>
+                <a href="https://bekim-osmani.github.io/Portal-Lajme/" target="_blank" class="btn text-white align-self-start mt-2">View Details
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
-            <div class="ratio ratio-16x9">
-              <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
-                alt="Web Image">
+        <!-- Row-2 -->
+        <div class="row g-4 group-top">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
+              <div class="ratio ratio-16x9">
+                <img src="project1.png" class="card-img-top" alt="Web Image">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Featured Website</h5>
+                <p class="card-text text-muted small flex-grow-1">
+                  Experience contemporary design with clean lines and sophisticated elements...
+                </p>
+                <a href="https://zeko-ameti.github.io/Zeko-Website/" target="_blank"
+                  class="btn text-white align-self-start mt-2">Visit Project
+                </a>
+              </div>
             </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Contemporary</h5>
-              <p class="card-text text-muted small flex-grow-1">
-                Experience contemporary design with clean lines and sophisticated elements...
-              </p>
-              <a href="#" class="btn text-white align-self-start mt-2">View Details
-              </a>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
+              <div class="ratio ratio-16x9">
+                <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
+                  alt="Web Image">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Contemporary</h5>
+                <p class="card-text text-muted small flex-grow-1">
+                  Transform your office with elegant furniture and professional design...
+                </p>
+                <a href="#" class="btn text-white align-self-start mt-2">View Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
+              <div class="ratio ratio-16x9">
+                <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
+                  alt="Web Image">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Contemporary</h5>
+                <p class="card-text text-muted small flex-grow-1">
+                  Transform your office with elegant furniture and professional design...
+                </p>
+                <a href="#" class="btn text-white align-self-start mt-2">View Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
+              <div class="ratio ratio-16x9">
+                <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
+                  alt="Web Image">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Contemporary</h5>
+                <p class="card-text text-muted small flex-grow-1">
+                  Transform your office with elegant furniture and professional design...
+                </p>
+                <a href="#" class="btn text-white align-self-start mt-2">View Details
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
-            <div class="ratio ratio-16x9">
-              <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
-                alt="Web Image">
+        <!-- Row-3 -->
+        <div class="row g-4 group-bottom">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
+              <div class="ratio ratio-16x9">
+                <img src="project1.png" class="card-img-top" alt="Web Image">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Featured Website</h5>
+                <p class="card-text text-muted small flex-grow-1">
+                  Experience contemporary design with clean lines and sophisticated elements...
+                </p>
+                <a href="https://zeko-ameti.github.io/Zeko-Website/" target="_blank"
+                  class="btn text-white align-self-start mt-2">Visit Project
+                </a>
+              </div>
             </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Contemporary</h5>
-              <p class="card-text text-muted small flex-grow-1">
-                Experience contemporary design with clean lines and sophisticated elements...
-              </p>
-              <a href="#" class="btn text-white align-self-start mt-2">View Details
-              </a>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
+              <div class="ratio ratio-16x9">
+                <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
+                  alt="Web Image">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Contemporary</h5>
+                <p class="card-text text-muted small flex-grow-1">
+                  Transform your office with elegant furniture and professional design...
+                </p>
+                <a href="#" class="btn text-white align-self-start mt-2">View Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
+              <div class="ratio ratio-16x9">
+                <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
+                  alt="Web Image">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Contemporary</h5>
+                <p class="card-text text-muted small flex-grow-1">
+                  Transform your office with elegant furniture and professional design...
+                </p>
+                <a href="#" class="btn text-white align-self-start mt-2">View Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
+              <div class="ratio ratio-16x9">
+                <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
+                  alt="Web Image">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Contemporary</h5>
+                <p class="card-text text-muted small flex-grow-1">
+                  Transform your office with elegant furniture and professional design...
+                </p>
+                <a href="#" class="btn text-white align-self-start mt-2">View Details
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
-            <div class="ratio ratio-16x9">
-              <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
-                alt="Web Image">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Contemporary</h5>
-              <p class="card-text text-muted small flex-grow-1">
-                Experience contemporary design with clean lines and sophisticated elements...
-              </p>
-              <a href="#" class="btn text-white align-self-start mt-2">View Details
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Row-2 -->
-      <div class="row g-4 mb-4">
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
-            <div class="ratio ratio-16x9">
-              <img src="project1.png" class="card-img-top" alt="Web Image">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Featured Website</h5>
-              <p class="card-text text-muted small flex-grow-1">
-                Experience contemporary design with clean lines and sophisticated elements...
-              </p>
-              <a href="https://zeko-ameti.github.io/Zeko-Website/" target="_blank"
-                class="btn text-white align-self-start mt-2">Visit Project
-              </a>
+        <!-- Row-4 -->
+        <div class="row g-4 group-top">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
+              <div class="ratio ratio-16x9">
+                <img src="project1.png" class="card-img-top" alt="Web Image">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Featured Website</h5>
+                <p class="card-text text-muted small flex-grow-1">
+                  Experience contemporary design with clean lines and sophisticated elements...
+                </p>
+                <a href="https://zeko-ameti.github.io/Zeko-Website/" target="_blank"
+                  class="btn text-white align-self-start mt-2">Visit Project
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
-            <div class="ratio ratio-16x9">
-              <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
-                alt="Web Image">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Contemporary</h5>
-              <p class="card-text text-muted small flex-grow-1">
-                Transform your office with elegant furniture and professional design...
-              </p>
-              <a href="#" class="btn text-white align-self-start mt-2">View Details
-              </a>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
+              <div class="ratio ratio-16x9">
+                <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
+                  alt="Web Image">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Contemporary</h5>
+                <p class="card-text text-muted small flex-grow-1">
+                  Transform your office with elegant furniture and professional design...
+                </p>
+                <a href="#" class="btn text-white align-self-start mt-2">View Details
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
-            <div class="ratio ratio-16x9">
-              <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
-                alt="Web Image">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Contemporary</h5>
-              <p class="card-text text-muted small flex-grow-1">
-                Transform your office with elegant furniture and professional design...
-              </p>
-              <a href="#" class="btn text-white align-self-start mt-2">View Details
-              </a>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
+              <div class="ratio ratio-16x9">
+                <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
+                  alt="Web Image">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Contemporary</h5>
+                <p class="card-text text-muted small flex-grow-1">
+                  Transform your office with elegant furniture and professional design...
+                </p>
+                <a href="#" class="btn text-white align-self-start mt-2">View Details
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
-            <div class="ratio ratio-16x9">
-              <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
-                alt="Web Image">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Contemporary</h5>
-              <p class="card-text text-muted small flex-grow-1">
-                Transform your office with elegant furniture and professional design...
-              </p>
-              <a href="#" class="btn text-white align-self-start mt-2">View Details
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Row-3 -->
-      <div class="row g-4 mb-4">
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
-            <div class="ratio ratio-16x9">
-              <img src="project1.png" class="card-img-top" alt="Web Image">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Featured Website</h5>
-              <p class="card-text text-muted small flex-grow-1">
-                Experience contemporary design with clean lines and sophisticated elements...
-              </p>
-              <a href="https://zeko-ameti.github.io/Zeko-Website/" target="_blank"
-                class="btn text-white align-self-start mt-2">Visit Project
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
-            <div class="ratio ratio-16x9">
-              <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
-                alt="Web Image">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Contemporary</h5>
-              <p class="card-text text-muted small flex-grow-1">
-                Transform your office with elegant furniture and professional design...
-              </p>
-              <a href="#" class="btn text-white align-self-start mt-2">View Details
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
-            <div class="ratio ratio-16x9">
-              <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
-                alt="Web Image">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Contemporary</h5>
-              <p class="card-text text-muted small flex-grow-1">
-                Transform your office with elegant furniture and professional design...
-              </p>
-              <a href="#" class="btn text-white align-self-start mt-2">View Details
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
-            <div class="ratio ratio-16x9">
-              <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
-                alt="Web Image">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Contemporary</h5>
-              <p class="card-text text-muted small flex-grow-1">
-                Transform your office with elegant furniture and professional design...
-              </p>
-              <a href="#" class="btn text-white align-self-start mt-2">View Details
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Row-4 -->
-      <div class="row g-4 mb-4">
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
-            <div class="ratio ratio-16x9">
-              <img src="project1.png" class="card-img-top" alt="Web Image">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Featured Website</h5>
-              <p class="card-text text-muted small flex-grow-1">
-                Experience contemporary design with clean lines and sophisticated elements...
-              </p>
-              <a href="https://zeko-ameti.github.io/Zeko-Website/" target="_blank"
-                class="btn text-white align-self-start mt-2">Visit Project
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
-            <div class="ratio ratio-16x9">
-              <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
-                alt="Web Image">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Contemporary</h5>
-              <p class="card-text text-muted small flex-grow-1">
-                Transform your office with elegant furniture and professional design...
-              </p>
-              <a href="#" class="btn text-white align-self-start mt-2">View Details
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
-            <div class="ratio ratio-16x9">
-              <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
-                alt="Web Image">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Contemporary</h5>
-              <p class="card-text text-muted small flex-grow-1">
-                Transform your office with elegant furniture and professional design...
-              </p>
-              <a href="#" class="btn text-white align-self-start mt-2">View Details
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
-            <div class="ratio ratio-16x9">
-              <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
-                alt="Web Image">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Contemporary</h5>
-              <p class="card-text text-muted small flex-grow-1">
-                Transform your office with elegant furniture and professional design...
-              </p>
-              <a href="#" class="btn text-white align-self-start mt-2">View Details
-              </a>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm card-click border-1 overflow-hidden">
+              <div class="ratio ratio-16x9">
+                <img src="midsection-man-holding-coffee-cup-table_1048944-12468868.avif" class="card-img-top"
+                  alt="Web Image">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Contemporary</h5>
+                <p class="card-text text-muted small flex-grow-1">
+                  Transform your office with elegant furniture and professional design...
+                </p>
+                <a href="#" class="btn text-white align-self-start mt-2">View Details
+                </a>
+              </div>
             </div>
           </div>
         </div>

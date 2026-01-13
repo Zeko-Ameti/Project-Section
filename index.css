@@ -1,33 +1,230 @@
+:root {
+    --capstone-white-light: #fff;
+    --capstone-white: rgb(255 255 255 / 70%);
+    --capstone-yellow-light: #FFA835;
+    --capstone-yellow: rgb(255 168 53 / 70%);
+
+    /* the original logo yellow #FAA736 and green #202b32 colors */
+    --body-bkg-color: rgb(32 43 50);
+    /* #202b32 */
+    --logo-yellow: rgb(250 167 54);
+    /* #faa736 */
+
+    /* the color differences are based to the diff of original boostrap btn-primary */
+    --logo-yellow-btn-bkg-hover: rgb(248 151 16);
+    --logo-yellow-btn-border-hover: rgb(247 145, 3);
+    --logo-yellow-btn-bkg-active: rgb(247 145 3);
+    --logo-yellow-btn-border-active: rgb(247 140 0);
+
+    /* font colors taken from the original academy website */
+    --font-color: rgb(255 255 255 / 70%);
+    --light-font-color: rgb(255 255 255 / 80%);
+    --font-color-disabled: rgb(255 255 255 / 20%);
+    --font-color-half-disabled: rgb(255 255 255 / 40%);
+    ;
+}
+
+/* background color used for body - logo green */
+.bg-body-bkg {
+    background-color: var(--body-bkg-color);
+}
+
+/* background-color used for footer - taken originaly from the academy website */
+.bg-footer-bkg {
+    background-color: #243038;
+    color: var(--font-color);
+}
+
+/* text color of the bacgkound - to show as transparent */
+.btn-text-color-transparent {
+    color: #f8f9fa !important;
+}
+
+/* custom button with logo yellow color */
+.btn-logo-yellow {
+    background-color: var(--logo-yellow);
+    border-color: var(--logo-yellow);
+    color: var(--body-bkg-color);
+    font-weight: 500;
+}
+
+.btn-logo-yellow:hover {
+    background-color: var(--logo-yellow-btn-bkg-hover);
+    border-color: var(--logo-yellow-btn-border-hover);
+    color: var(--body-bkg-color);
+}
+
+.btn-logo-yellow:disabled {
+    background-color: var(--logo-yellow);
+    border-color: var(--logo-yellow);
+    color: var(--body-bkg-color);
+}
+
+.btn-logo-yellow:focus,
+.btn-logo-yellow:active,
+.btn-logo-yellow.active,
+.btn-logo-yellow:active:focus {
+    background-color: var(--logo-yellow-btn-bkg-active);
+    border-color: var(--logo-yellow-btn-border-active);
+    color: var(--body-bkg-color);
+}
+
+/* .\end custom button logo yellow */
+
+/* socila media icon and other icons setup */
+.icon-non-clickable,
+.icon-clickable {
+    color: var(--logo-yellow) !important;
+}
+
+.icon-clickable:hover {
+    color: var(--logo-yellow-btn-bkg-hover) !important;
+}
+
+/* .\end */
+
+/* this make sure that all sections are displayed covering the full available viewport by taking care for the navbar height */
+.section-full {
+    min-height: calc(100vh - 76px);
+}
+
+/* make sure the first section (Home) moves down for nav bar height */
+.navbar-height {
+    margin-top: 76px;
+}
+
+/* title color with the green color of the logo */
+.title-color,
+.paragrapht-color {
+    color: var(--body-bkg-color);
+}
+
+/* font color for capstone evolve and academy websites */
+.capstone-text-color {
+    color: var(--font-color);
+}
+
+.text-logo-yellow {
+    color: var(--font-color);
+}
+
+.bg-logo-green {
+    background-color: var(--logo-yellow);
+}
+
+.negative-m-2 {
+    margin: -0.5rem !important;
+    /* Same as Bootstrap’s m-2 spacing */
+}
+
+.navbar {
+    height: 60px;
+}
+
+.navbar .nav-link {
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+.navbar .nav-link.active {
+    border-bottom: 2px solid white;
+    /* Use your brand color if needed */
+}
+
+/* remove the default border/highlight effect (often a focus ring or outline) that appears on the hamburger button (.navbar-toggler) when it's active or clicked */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler[aria-expanded="true"] {
+    /* outline: none; */
+    box-shadow: none;
+    /* border: none; */
+}
+
+/* remove the default outline, border highlight, or shadow that appears when input fields in the contact form are focused */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid #ced4da !important;
+    /* Set it manually or use your desired color */
+}
+
+/* on hover over the quick links make them lighter */
+.footer-quick-links:hover {
+    color: var(--font-color) !important;
+}
+
+/* Full height */
+@media (min-width: 992px) {
+    .container-2 {
+        min-height: calc(100vh - 60px);
+    }
+}
+
 /* Card */
 #Project-Section .card {
-  background-color: #ffffff !important;
-  border-radius: 6px;
-  overflow: hidden;
+    background-color: #ffffff !important;
+    border-radius: 6px;
+    overflow: hidden;
 }
 
 /* Image */
 #Project-Section .card .ratio {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+}
+
+@media (min-width: 992px) {
+    #Project-Section .ratio {
+        max-height: 150px; 
+    }
 }
 
 /* Button */
 #Project-Section .card .btn {
-  background-color: rgb(250, 167, 54);
-  color: #fff;
-  border: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: rgb(250, 167, 54);
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 #Project-Section .card .btn {
-  padding: 6px 12px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 #Project-Section .card .btn:hover,
 #Project-Section .card .btn:focus {
-  background-color: rgb(225, 154, 23) !important;
-  color: #fff;
+    background-color: rgb(225, 154, 23) !important;
+    color: #fff;
+}
+
+#Project-Section .card-title {
+    font-size: 1.07rem;
+    margin-bottom: 0.4rem;
+}
+
+#Project-Section .card-text {
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+/* ROW SPACING */
+#Project-Section .row {
+    margin-bottom: 1.5rem;
+}
+
+#Project-Section .row:first-child {
+    margin-top: 0.7rem;
+}
+
+@media (max-width: 991px) {
+    #Project-Section .row {
+        margin-bottom: 1.5rem;
+    }
 }
